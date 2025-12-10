@@ -9,12 +9,8 @@ public class AlgorithmRegistry {
     static {
     }
 
-    public static void register(String name, ISortStrategy strategy) {
-        algorithms.put(name.toLowerCase(), strategy);
-    }
-
     public static ISortStrategy get(String name) {
-        return algorithms.get(name.toLowerCase());
+        return algorithms.get(name);
     }
 
     public static void printAvailable() {
